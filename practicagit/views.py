@@ -12,3 +12,9 @@ def ver_alumno (request):
     template=loader.get_template('ver_alumno.html')
     template_renderizado=template.render({'alumnos':alumnos})
     return HttpResponse(template_renderizado)
+
+def inicio(request):
+    return HttpResponse('vista inicio')
+
+def cursos(request):
+    return HttpResponse('vista cursos')
