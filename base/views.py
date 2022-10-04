@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import Context,Template,loader
 from base.models import Alumno
+from django.shortcuts import render
 
 def inicio(request):
     return HttpResponse('vista inicio')
@@ -18,6 +19,4 @@ def ver_alumno (request):
     alumno1.save()
     alumno2.save()
     alumnos=Alumno.objects.all()
-    template=loader.get_template('ver_alumno.html')
-    template_renderizado=template.render({'alumnos':alumnos})
-    return HttpResponse(template_renderizado)
+    return render(request,"base/ver_alumno.html",{'alumnos':alumnos})

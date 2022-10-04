@@ -55,7 +55,7 @@ ROOT_URLCONF = 'practicagit.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\User\Documents\UNLAM\ZCODERHOUSE\Clase 19\PythonProyecto1\Practicagit\practicagit\templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
